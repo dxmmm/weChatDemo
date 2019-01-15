@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/about/about",
+    "pages/activity/activity",
+    "pages/demo/demo"
+  ],
+  "window":{
+    "backgroundTextStyle":"pink",
+    "navigationBarBackgroundColor": "#000", 
+    "navigationBarTitleText": "平行宇宙✨中的你",
+    "navigationBarTextStyle":"red",
+    "backgroundColor":"#000"
+  },
+  "tabBar": {
+    "color":"#fff",
+    "selectedColor":"#ff82ab",
+    "backgroundColor":"#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/2.png",
+        "text": "认识 ta..",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/1.png",
+        "text": "关于 wo..",
+        "selectedIconPath": "images/1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "requiredBackgroundModes": {
+    "pages": [
+      "pages/index/index"
+    ],
+    "requiredBackgroundModes": [
+      "audio"
+    ]
+  }
+}

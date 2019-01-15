@@ -1,0 +1,33 @@
+.toast-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 500rpx;
+  height: 500rpx;
+  background: #ccc;
+  opacity: 0.95;
+  margin: auto;
+  font-size: 14px;
+  text-align: center
+}
+.toast-img{
+  width: 100rpx;
+  height: 100rpx;
+  padding:50rpx 20rpx 0;
+}
+.toast-text{
+  display: block;
+  padding: 30rpx;
+  text-align: left;
+}
+.toast-btn{
+  height: 50rpx;
+  line-height: 50rpx;
+  display: inline-block;
+  margin-right:20rpx; 
+}
+.toast-btn:nth-child(2){
+  margin-right: 0;
+}

@@ -1,0 +1,9 @@
+@import "../index/index.wxss";
+.reasonImg{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 100rpx;
+}
+.shareBtn{
+  display: inline-block;
+}

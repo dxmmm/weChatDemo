@@ -1,0 +1,23 @@
+<!--about.wxml-->
+<!-- 最大的容器container -->
+<view class='container'>
+  <!-- 关注微信公众号组件 -->
+  <official-account class='official-account'></official-account>
+  <!-- scroll-view表示可滚动视图区域 -->
+  <scroll-view scroll-y="true" class='page-body' bindscrolltolower="loadMore">
+    <!-- 在以下编写页面的结构 -->
+    <!-- 轮播图 -->
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoPlay}}' interval='{{interval}}' duration='{{duration}}' class='page-section'>
+      <block wx:for='{{imgUrls}}'>
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 基本信息 -->
+    <view wx:for='{{aboutArray}}' class='about-message'>
+        <image src='{{item.icon}}' class='about-img'></image>
+        <text class='about-text'>{{item.text}}</text>
+    </view>
+  </scroll-view>
+</view>
