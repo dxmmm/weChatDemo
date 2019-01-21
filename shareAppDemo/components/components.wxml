@@ -1,0 +1,13 @@
+<!-- 小程序自带弹窗只能显示7个字提示，所以我们自定义一个简单的弹窗组件  -->
+<view class="wrapper">
+  <!-- 组件内部节点 -->
+  <view class='toast-box' wx:if='{{isShow}}'>
+    <image class='toast-img' src='{{imageUrl}}'></image>
+    <text class='toast-text'>{{toastText}}</text>
+    <button class='toast-btn' bindtap='toastSure' wx:if='{{isBtnShow}}'>{{btnSureText}}</button>
+    <button class='toast-btn' bindtap='toastCancel'>{{btnCancelText}}</button>
+  </view>
+  <!-- 可插入内容将被放置在组件 <slot> 的位置上，我们不需要插入，只是为了学习slot用法就写上 --> 
+  <slot>可插入内容</slot>
+</view>
+

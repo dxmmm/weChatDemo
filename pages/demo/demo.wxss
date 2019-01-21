@@ -1,0 +1,15 @@
+.bg-black {
+
+  height: 200rpx;
+
+  background: lightskyblue;
+
+}
+
+.bg-red {
+
+  height: 200rpx;
+
+  background: lightpink;
+
+}

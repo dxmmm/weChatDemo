@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+  <!-- 使用button来授权登录 -->
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '../../images/7.jpg'}}" mode="cover"></image>
+    </block>
+  </view>
+  <view class="usermotto">
+  <!-- \n换行 -->
+    <text>你好。亲爱的{{userInfo.nickName ? userInfo.nickName : "地球人。🌎"}} </text>
+    <text class='story'>{{storyStr}}</text>
+  </view>
+  <!-- 点击开始按钮 -->
+  <button class='plan' bindtap="viewTap"> 🔮 点击按钮了解另一个神秘的自己 </button>
+</view>
+
+
+<view>
+  <my-component isShow="{{isShow}}" imageUrl="{{imageUrl}}" toastText="{{toastText}}" isBtnShow="{{isBtnShow}}" btnCancelText="{{btnCancelText}}" btnSureText="{{btnSureText}}">
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+    <!-- <view>这里是插入到组件slot中的内容</view> -->
+  </my-component>
+</view>
